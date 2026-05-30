@@ -198,8 +198,8 @@ export const antiLeechConfig: AntiLeechConfig = {
 };
 // ga统计配置
 export const googleAnalyticsConfig = {
-	enable: false,
-	measurementId: "G-68S9RLWRP0",
+	enable: true,
+	measurementId: "G-VB9ZR2C3QX",
 };
 // 代码高亮配置
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
