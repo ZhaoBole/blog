@@ -182,9 +182,9 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 };
 // umami统计配置
 export const umamiConfig: UmamiConfig = {
-	enable: false,
-	baseUrl: "https://umami.micostar.cc",
-	shareId: "X9ZZZ5l2xErS44Rc",
+	enable: true,
+	baseUrl: "https://cloud.umami.is/script.js",
+	shareId: "0cc9f81e-57ea-4f35-a141-b31faaef5d6c",
 	timezone: "Asia/Shanghai",
 };
 // 防盗链/域名保护配置
