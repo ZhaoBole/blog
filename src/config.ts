@@ -11,7 +11,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "MW博客",
+	title: "MW的博客",
 	subtitle: "分享网络技术、开发教程、软件资源",
 	description:
 		"分享网络技术、开发教程、软件资源",
@@ -45,7 +45,7 @@ export const siteConfig: SiteConfig = {
 	},
 	// 背景图配置
 	background: {
-		enable: true,
+		enable: false,
 		// 是否启用背景图像
 		src: "https://img.micostar.cc/random",
 		// 背景图API地址
