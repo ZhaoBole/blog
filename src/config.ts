@@ -11,51 +11,73 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Betsy Blog",
-	subtitle: "分享网络技术、服务器部署、Unity开发、AI技术应用与原理",
+	title: "MW博客",
+	subtitle: "分享网络技术、开发教程、软件资源",
 	description:
-		"分享网络技术、服务器部署、Unity开发、AI技术应用与原理、作者为流转星(Betsy)",
-
+		"分享网络技术、开发教程、软件资源",
 	keywords: [],
-	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+	// 关键字
+	lang: "zh_CN",
+	// 语言：'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 361, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: true, // Hide the theme color picker for visitors
-		forceDarkMode: true, // Force dark mode and hide theme switcher
+		hue: 225,
+		// 主题颜色的默认色调，从 0 到 360。红色：0，青色：200，青色：250，粉色：345
+		fixed: true,
+		// 为访客隐藏主题颜色选择器
+		forceDarkMode: true,
+		// 强制黑暗模式并隐藏主题切换器
 	},
+	// 轮播图配置
 	banner: {
 		enable: false,
-		src: "/xinghui.avif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		src: "/xinghui.avif",
+		// 相对于/src目录。如果以“/”开头，则相对于 /public 目录
+		position: "center",
+		// 相当于object-position，只支持'top', 'center', 'bottom'。默认为“中心”
 		credit: {
-			enable: true, // Display the credit text of the banner image
-			text: "Pixiv @chokei", // Credit text to be displayed
-
-			url: "https://img.micostar.cc/random", // (Optional) URL link to the original artwork or artist's page
+			enable: true,
+			// 显示横幅图像的信用文本
+			text: "Pixiv @chokei",
+			//要显示的信用文本
+			url: "https://img.micostar.cc/random",
+			//（可选）原始艺术作品或艺术家页面的 URL 链接
 		},
 	},
+	// 背景图配置
 	background: {
-		enable: true, // Enable background image
-		src: "https://img.micostar.cc/random", // 优先使用新 API
-		position: "center", // Background position: 'top', 'center', 'bottom'
-		size: "cover", // Background size: 'cover', 'contain', 'auto'
-		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
-		attachment: "fixed", // Background attachment: 'fixed', 'scroll', 'local'
-		opacity: 0.5, // Background opacity (0-1)
+		enable: true,
+		// 是否启用背景图像
+		src: "https://img.micostar.cc/random",
+		// 背景图API地址
+		position: "center",
+		// 背景位置：'顶部'、'中心'、'底部'
+		size: "cover",
+		// 背景大小：“覆盖”、“包含”、“自动”
+		repeat: "no-repeat",
+		// 背景重复：'no-repeat'、'repeat'、'repeat-x'、'repeat-y'
+		attachment: "fixed",
+		// 背景附件: 'fixed', 'scroll', 'local'
+		opacity: 0.5,
+		// 背景透明度 (0-1)
 	},
+	// 目录配置
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true,
+		// 在帖子右侧显示目录
+		depth: 2,
+		// 表中显示的最大标题深度，从 1 到 3
 	},
+	// 网站图标配置
 	favicon: [
-		// Leave this array empty to use the default favicon
+		// 将此数组留空以使用默认的图标
 		{
-			src: "https://image.cloudrunmax.top/file/CF/1756734381495_58fc963052f0a5cd8ce123b8d10c4a53.jpg", // Path of the favicon, relative to the /public directory
-			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+			src: "https://image.cloudrunmax.top/file/CF/1756734381495_58fc963052f0a5cd8ce123b8d10c4a53.jpg",
+			// 图标的路径，相对于 /public 目录
+			// theme: 'light', // （可选）'light' 或 'dark'，仅当您有不同的浅色和深色模式图标时才设置
+			// size: '32x32', // （可选）图标的大小，仅当您有不同大小的图标时才设置
 		},
 	],
+	// 应用配置
 	apps: [
 		{
 			name: "私人AI网站",
@@ -101,7 +123,7 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 };
-
+// 导航栏配置
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
@@ -120,60 +142,66 @@ export const navBarConfig: NavBarConfig = {
 		},
 	],
 };
-
+// 个人信息配置
 export const profileConfig: ProfileConfig = {
-	avatar: "/images/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "流转星(Betsy)",
-	bio: ["爱我所爱，我们是彼此永远的动力"],
+	avatar: "/http://q.qlogo.cn/headimg_dl?dst_uin=2357885308&spec=640&img_type=jpg",
+	// 相对于/src目录。如果以“/”开头，则相对于 /public 目录
+	name: "MW",
+	bio: ["北冥有鱼，其名为鲲"],
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/420378171",
+			name: "邮箱",
+			icon: "fa6-solid:envelope-square",
+			url: "链接",
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/Besty0728",
+			name: "微信",
+			icon: "fa6-brands:weixin",
+			url: "链接",
+		},
+		{
+			name: "QQ",
+			icon: "fa6-brands:qq",
+			url: "链接",
 		},
 	],
 };
-
+// 协议配置
 export const licenseConfig: LicenseConfig = {
 	enable: true,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
-
-//图片回退
+//图床配置
 export const imageFallbackConfig: ImageFallbackConfig = {
-	enable: true,
-	originalDomain: "img.micostar.cc", // 主力图床 (新项目)
-	fallbackDomain: "image.cloudrunmax.top", // R2 备用图床 (旧项目)
+	enable: false,
+	originalDomain: "img.micostar.cc",
+	// 主力图床 (新项目)
+	fallbackDomain: "image.cloudrunmax.top",
+	// R2 备用图床 (旧项目)
 };
-
+// umami统计配置
 export const umamiConfig: UmamiConfig = {
-	enable: true,
+	enable: false,
 	baseUrl: "https://umami.micostar.cc",
 	shareId: "X9ZZZ5l2xErS44Rc",
 	timezone: "Asia/Shanghai",
 };
-
 // 防盗链/域名保护配置
 export const antiLeechConfig: AntiLeechConfig = {
-	enable: true,
-	officialSites: [{ url: "https://www.micostar.cc", name: "主站" }],
+	enable: false,
+	officialSites: [{ url: "https://blog.mwzbl.qzz.io", name: "主站" }],
 	debug: false,
 	warningTitle: "⚠️ 域名安全警告",
 	warningMessage:
 		"您可能正在访问非官方网站，存在安全风险！建议跳转到官方网站。",
 };
-
+// ga统计配置
 export const googleAnalyticsConfig = {
-	enable: true,
+	enable: false,
 	measurementId: "G-68S9RLWRP0",
 };
-
+// 代码高亮配置
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	theme: "github-dark",
 };
