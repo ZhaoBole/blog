@@ -151,7 +151,7 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "邮箱",
-			icon: "fa6-solid:envelope-square",
+			icon: "fa6-solid:envelope",
 			url: "链接",
 		},
 		{
