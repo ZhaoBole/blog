@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 将此数组留空以使用默认的图标
 		{
-			src: "https://image.cloudrunmax.top/file/CF/1756734381495_58fc963052f0a5cd8ce123b8d10c4a53.jpg",
+			src: "http://q.qlogo.cn/headimg_dl?dst_uin=2357885308&spec=640&img_type=jpg",
 			// 图标的路径，相对于 /public 目录
 			// theme: 'light', // （可选）'light' 或 'dark'，仅当您有不同的浅色和深色模式图标时才设置
 			// size: '32x32', // （可选）图标的大小，仅当您有不同大小的图标时才设置
