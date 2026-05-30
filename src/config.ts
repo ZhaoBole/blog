@@ -144,7 +144,7 @@ export const navBarConfig: NavBarConfig = {
 };
 // 个人信息配置
 export const profileConfig: ProfileConfig = {
-	avatar: "/http://q.qlogo.cn/headimg_dl?dst_uin=2357885308&spec=640&img_type=jpg",
+	avatar: "http://q.qlogo.cn/headimg_dl?dst_uin=2357885308&spec=640&img_type=jpg",
 	// 相对于/src目录。如果以“/”开头，则相对于 /public 目录
 	name: "MW",
 	bio: ["北冥有鱼，其名为鲲"],
